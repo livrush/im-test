@@ -3,11 +3,8 @@ const bodyParser= require('body-parser');
 require('dotenv').config();
 const app = express();
 const path = require('path');
-const PORT = process.env.PORT;
-const HOST = process.env.HOST;
-
-
-console.log(PORT);
+const PORT = process.env.PORT || 8080;
+const HOST = process.env.HOST || 'localhost';
 
 app.use(express.static(path.join(__dirname, '/')));
 app.use(bodyParser.urlencoded({ extended: true }));
