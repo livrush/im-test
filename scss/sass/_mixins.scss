@@ -1,0 +1,22 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@mixin triangleUp($size, $color) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 $size $size $size;
+	border-color: transparent transparent $color transparent;
+}
+
+@mixin triangleDown($size, $color) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: $size $size 0 $size;
+	border-color: $color transparent transparent transparent;
+}

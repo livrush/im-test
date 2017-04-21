@@ -1,0 +1,298 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 13, ../sass/style.scss */
+.cap, nav button, .header .main .top .text h2, .header .main .top .text h1, .header .main .mid {
+  text-transform: uppercase;
+}
+
+/* line 17, ../sass/style.scss */
+.smallMargin, .header .main .top, .header .main .mid, .header .main .low {
+  margin: 2px;
+}
+
+/* line 21, ../sass/style.scss */
+.left {
+  text-align: left;
+}
+
+/* line 25, ../sass/style.scss */
+.center, body, .header .main .low .left, .header .main .low .right {
+  text-align: center;
+}
+
+/* line 29, ../sass/style.scss */
+.right {
+  text-align: right;
+}
+
+/* line 33, ../sass/style.scss */
+.centerDiv, .header .main, .header .main .top .box .tri, .header .bottom .tri {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 40, ../sass/style.scss */
+.greenBack, nav button, .header .main .low .left {
+  background-color: #8d9020;
+}
+
+/* line 44, ../sass/style.scss */
+.fabricBack, .header .main .low .right, .header .bottom, .content {
+  background-color: #c5bfb2;
+  background-image: url("../../assets/back.png");
+  background-position: center;
+  background-repeat: repeat;
+}
+
+/* line 51, ../sass/style.scss */
+.blackBack {
+  background-color: #000;
+}
+
+/* line 55, ../sass/style.scss */
+.tanBack {
+  background-color: #c5bfb2;
+}
+
+/* line 59, ../sass/style.scss */
+button {
+  border: 0px;
+}
+
+/* line 63, ../sass/style.scss */
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: Allerta;
+}
+
+/* line 70, ../sass/style.scss */
+nav {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 78, ../sass/style.scss */
+nav img {
+  margin-left: 10px;
+  filter: invert(100%);
+}
+/* line 82, ../sass/style.scss */
+nav button {
+  margin-right: 10px;
+  font-size: 10px;
+  padding: 10px;
+}
+
+/* line 91, ../sass/style.scss */
+.header {
+  height: 100vh;
+  background-image: url("../../assets/header.png");
+  background-size: cover;
+}
+/* line 95, ../sass/style.scss */
+.header .main {
+  width: 500px;
+}
+/* line 98, ../sass/style.scss */
+.header .main .top {
+  background: #c5bfb2;
+  box-sizing: borderBox;
+  padding: 30px;
+}
+/* line 104, ../sass/style.scss */
+.header .main .top .text {
+  border: #000 2px solid;
+  padding: 45px 0;
+}
+/* line 107, ../sass/style.scss */
+.header .main .top .text h2 {
+  font-size: 30px;
+}
+/* line 111, ../sass/style.scss */
+.header .main .top .text h1 {
+  font-size: 60px;
+}
+/* line 116, ../sass/style.scss */
+.header .main .top .box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 50px;
+  width: 60px;
+  background: #000;
+}
+/* line 123, ../sass/style.scss */
+.header .main .top .box .tri {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #8d9020 transparent transparent transparent;
+}
+/* line 129, ../sass/style.scss */
+.header .main .mid {
+  background: #000;
+  color: #8d9020;
+  padding: 30px;
+}
+/* line 135, ../sass/style.scss */
+.header .main .mid span {
+  color: #fff;
+  text-transform: capitalize;
+}
+/* line 142, ../sass/style.scss */
+.header .main .low .left {
+  opacity: 0.9;
+  padding: 10px;
+}
+/* line 148, ../sass/style.scss */
+.header .main .low .right {
+  padding: 10px;
+}
+/* line 155, ../sass/style.scss */
+.header .bottom {
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border: 0;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 166, ../sass/style.scss */
+.header .bottom .tri {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 25px 0 25px;
+  border-color: #59554d transparent transparent transparent;
+  opacity: 0.50;
+}
+
+/* line 174, ../sass/style.scss */
+.arrow_box {
+  position: relative;
+  background: #8d9020;
+}
+
+/* line 178, ../sass/style.scss */
+.arrow_box:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-left-color: #8d9020;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+/* line 197, ../sass/style.scss */
+.icons {
+  color: #000;
+  width: 80%;
+  margin: auto;
+}
+/* line 201, ../sass/style.scss */
+.icons .top {
+  min-height: 300px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #59554d;
+  background-color: rgba(89, 85, 77, 0.1);
+}
+/* line 210, ../sass/style.scss */
+.icons .low {
+  height: 300px;
+  background-color: #8d9020;
+  background-color: rgba(141, 144, 32, 0.1);
+}

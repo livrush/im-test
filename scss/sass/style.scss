@@ -1,0 +1,215 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+@import 'variables';
+@import 'mixins';
+
+// TODO: DELETE AFTER ARCHITECTURE COMPLETE
+div {
+	// border: 2px solid $green;
+}
+
+.cap {
+  text-transform: uppercase;
+}
+
+.smallMargin {
+	margin: 2px;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.centerDiv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.greenBack {
+	background-color: $green;
+}
+
+.fabricBack {
+	background-color: $tan;
+	background-image: url('../../assets/back.png');
+	background-position: center;
+	background-repeat: repeat;
+}
+
+.blackBack {
+	background-color: $black;
+}
+
+.tanBack {
+	background-color: $tan;
+}
+
+button {
+	border: 0px;
+}
+
+body {
+	@extend .center;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+  font-family: Allerta;
+}
+
+nav {
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	background: $black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	img {
+		margin-left: 10px;
+		filter: invert(100%);
+	}
+	button {
+		margin-right: 10px;
+		@extend .greenBack;
+		@extend .cap;
+		font-size: 10px;
+		padding: 10px;
+	}
+}
+
+.header {
+	height: 100vh;
+	background-image: url('../../assets/header.png');
+	background-size: cover;
+	.main {
+		@extend .centerDiv;
+		width: 500px;
+		.top {
+			@extend .smallMargin;
+			background: $tan;
+			// height: 280px;
+			box-sizing: borderBox;
+			padding: 30px;
+			.text {
+				border: $black 2px solid;
+				padding: 45px 0;
+				h2 {
+					@extend .cap;
+					font-size: 30px;
+				}
+				h1 {
+					@extend .cap;
+					font-size: 60px;
+				}
+			}
+			.box {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				height: 50px;
+				width: 60px;
+				background: $black;
+				.tri {
+					@include triangleDown(15px, $green);
+					@extend .centerDiv;
+				}
+			}
+		}
+		.mid {
+			@extend .cap;
+			@extend .smallMargin;
+			background: $black;
+			color: $green;
+			padding: 30px;
+			span {
+				color: $white;
+				text-transform: capitalize;
+			}
+		}
+		.low {
+			@extend .smallMargin;
+			.left {
+				@extend .center;
+				@extend .greenBack;
+				opacity: 0.9;
+				padding: 10px;
+			}
+			.right {
+				@extend .center;
+				@extend .fabricBack;
+				padding: 10px;
+			}
+		}
+	}
+	.bottom {
+		@extend .fabricBack;
+		border-top-right-radius: 100%;
+		border-top-left-radius: 100%;
+		border: 0;
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		bottom:0px;
+		left: 50%;
+    transform: translateX(-50%);
+		.tri {
+			@include triangleDown(25px, $brown);
+			@extend .centerDiv;
+			opacity: 0.50;
+		}
+	}
+}
+
+.arrow_box {
+	position: relative;
+	background: $green;
+}
+.arrow_box:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-left-color: $green;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+.content {
+	@extend .fabricBack;
+}
+
+.icons {
+	color: $black;
+	width: 80%;
+	margin: auto;
+	.top {
+		min-height: 300px;
+		padding-left: 30px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		background-color: $brown;
+		background-color: transparentize($brown, 0.9);
+	}
+	.low {
+		height: 300px;
+		background-color: $green;
+		background-color: transparentize($green, 0.9);
+	}
+}
